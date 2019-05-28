@@ -1,0 +1,26 @@
+version: 0.0
+os: linux
+files:
+  - source: /build
+    destination: /var/www/release/editor/new
+
+# permissions:
+#   - object: /var/www/release/api
+#     owner: root
+#     group: root
+#     mode: 777
+#     type:
+#       - file
+
+#   - object: 
+#     owner: root
+#     group: rootf
+#     mode: 777
+
+hooks:
+  BeforeInstall:
+    - location: scripts/beforeInstall.sh
+#      runas: root
+  AfterInstall:
+    # - location: scripts/afterInstall.sh
+#      runas: root

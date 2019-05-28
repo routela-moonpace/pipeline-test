@@ -1,0 +1,27 @@
+version: 0.2
+#run-as: root
+#env:
+phases:
+  install:
+    runtime-versions:
+      nodejs: 8
+    commands:
+      - echo Installing NPM Packages and wget Envorinment File
+      - npm install
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+  post_build:
+    commands:
+      - echo Nothing to do in the post_build phase...
+artifacts:
+  files:
+    - build/**/*
+    - scripts/**
+    - appspec.yml
+  name: codebuild-test
+  discard-path: yes
