@@ -1,7 +1,7 @@
 #!/bin/bash
 DATE=$(date +"%Y%m%d_%H%M%S")
 
-APP=editor
+APP=codebuild-test
 
 RELEASE_APP_FOLDER=/var/www/release/$APP
 NEW_FOLDER=$RELEASE_APP_FOLDER/new
