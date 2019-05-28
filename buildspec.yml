@@ -13,7 +13,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date` $ENV
+      - echo "Build started on `date` $ENV"
       - npm run build
   post_build:
     commands:
