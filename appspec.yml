@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /build
-    destination: /var/www/release/editor/new
+    destination: /var/www/release/codebuild-test/new
 
 # permissions:
 #   - object: /var/www/release/api
